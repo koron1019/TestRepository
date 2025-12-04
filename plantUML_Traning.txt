@@ -1,0 +1,12 @@
+@startuml
+left to right direction
+actor "student" as sd
+rectangle el-campus {
+    usecase "小テスト" as UC1
+    usecase "お知らせ閲覧" as UC2
+    usecase "課題提出" as UC3
+}
+sd --> UC1
+sd --> UC2
+sd --> UC3
+@enduml
