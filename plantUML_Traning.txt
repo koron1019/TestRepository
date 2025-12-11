@@ -5,10 +5,8 @@ rectangle el-campus {
     usecase "小テスト" as UC1
     usecase "お知らせ閲覧" as UC2
     usecase "課題提出" as UC3
-    usecase "閲覧" as UC4
 }
 sd --> UC1
-sd --> UC4
 sd --> UC2
 sd --> UC3
 @enduml
