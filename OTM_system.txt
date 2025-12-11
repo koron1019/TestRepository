@@ -1,0 +1,36 @@
+@startuml
+left to right direction
+actor 生徒 as st
+actor 教師 as te
+package "UNIVERSAL PASSPORT" as u{
+    usecase "シラバス参照" as u1
+    usecase "履修登録" as u2
+    usecase "成績確認" as u3
+    usecase "時間割" as u4
+    usecase "資格希望" as u5
+}
+:st: --> u1
+:st: --> u2
+:st: --> u3
+:st: --> u4
+:st: --> u5
+
+package el-campus as e{
+
+    usecase "お知らせを発行" as e1
+    usecase "アンケートに回答" as e2
+    usecase "掲示板を見る" as e3
+    usecase "試験を受ける" as e4
+    usecase "コンテンツを視聴" as e5
+    usecase "課題をダウンロード" as e6
+
+}
+:te: -up-> e1
+:te: -up-> e2
+:st: -up-> e2
+:st: -up-> e3
+:st: -up-> e4
+:st: -up-> e5
+:st: -up-> e6
+
+@enduml
