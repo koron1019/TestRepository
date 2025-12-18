@@ -1,0 +1,12 @@
+@startUML
+
+participant "Main Function" as m
+participant calculate as c
+participant "get Input" as g
+
+m -> c:データを計算する
+c -> g:入力データを要求
+c <-- g:入力データ
+m <-- c:計算結果
+
+@endUML

@@ -1,0 +1,12 @@
+@startUML
+
+actor Client as c
+participant Server as s
+database Database as d
+
+c ->> s:データを要求
+s ->> d:問い合わせ
+s <-- d:結果
+c <-- s:データ
+
+@endUML
